@@ -17,6 +17,16 @@ class Song
    song = self.new 
    song.save
    song
-   
   end
+  
+  def self.find_by_name 
+    song = self.new 
+    
+    
+    
+  end
+  
+  
+  
+  
 end
