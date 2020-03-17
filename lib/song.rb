@@ -11,27 +11,31 @@ class Song
   end
   
   def self.create
-   #instantiate the Song
-   # save the Song
-   #return new Song
-   song = self.new 
-   song.save
-   song
+    #instantiate the Song
+    # save the Song
+    #return new Song
+    song = self.new 
+    song.save
+    song
   end
   
   def self.new_by_name(name) 
     song = self.new 
-  song.name = name
-  song
+    song.name = name
+    song
   end
   
-def self.create_by_name(song_name)
-  song = self.create 
-  song.name =  song_name
-  song  
-end
+  def self.create_by_name(song_name)
+    song = self.create 
+    song.name =  song_name
+    song  
+  end
   
-  
+  def self.find_by_name
+    
+    
+    
+  end
   
   
   
