@@ -40,6 +40,7 @@ class Song
      if @@all.find_by_name
        song
      else song.create_by_name
+   end
      
    end
     
