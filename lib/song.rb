@@ -46,15 +46,10 @@ class Song
   end
     
     def self.new_from_filename(filename)
-      #filename = "Taylor Swift - Black space mp3"
-      #return a new song instance 
-      #set song name to name of artist "taylor swift"
-      #parse the filename for song name and artist name 
-      #separate artist name at - 
-      #remove the .mp3 from song name
+     
       info = filename.split(" - ")
       song = self.new 
-      song.name = info[1].chomp("mp3")
+      song.name = info[1].chomp(".mp3")
       song.artist_name = info[0]
       song
       
