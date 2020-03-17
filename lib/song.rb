@@ -54,7 +54,7 @@ class Song
       #remove the .mp3 from song name
       info = filename.split(" - ")
       song = self.new 
-      song.name = info[1]
+      song.name = info[0]
       
       
     end
