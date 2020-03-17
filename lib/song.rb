@@ -52,9 +52,10 @@ class Song
       #parse the filename for song name and artist name 
       #separate artist name at - 
       #remove the .mp3 from song name
-      info = filename.chomp(".mp3")
+      info = filename.split(" - ")
       song = self.new 
-      song.name = info[0]
+      song.name = info[1].chomp("mp3")
+      song.artist_name = info[0]
       song
       
     end
