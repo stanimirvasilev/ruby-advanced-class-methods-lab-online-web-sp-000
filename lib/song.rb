@@ -11,7 +11,6 @@ class Song
   end
   
   def self.create
-    initialize new 
     @@all << self.new
   end
 
